@@ -1,0 +1,19 @@
+Binary Search Programs:
+
+bs1 : WAP to find an element in a sorted array
+bs2 : WAP to find first/last occurence of a element in a sorted array
+bs3 : WAP to find count of an element in a sorted array.
+bs4 : WAP to find number of times sorted array is rotated.
+bs5 : WAP to find an element in a rotated sorted array.
+bs6 : WAP to find an element in a nearly sorted array.
+bs7 : WAP to find Floor of an element in a Sorted array.
+bs8 : WAP to find ceil of an element in a Sorted array.
+bs9 : WAP to find position of an element in an infinite sorted array.
+	  or WAP to find index of first 1 in a infinite binary sorted array.
+bs10: WAP to find minimum absolute difference between key and array element.
+bs11: WAP to find index of a peak element.
+      or WAP to maximum element in a bitonic array.
+bs12: WAP to find an element in bitonic array.
+bs13: WAP to find an element in a Row wise And Column wise Sorted Matrix.
+bs14: WAP to allocate minimum number of pages. 
+bs15: WAP to find Nth root of a given number.

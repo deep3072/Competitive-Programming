@@ -1,0 +1,2 @@
+Observation : Search peak element in bitonic array (bs11.cpp) and divide array in two parts from that peak index.
+				First part is strictly increasing and second is strictly decreasing. Appply binary search in both parts to find key element.
