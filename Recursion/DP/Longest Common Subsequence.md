@@ -20,7 +20,7 @@ class Solution
                                dp[i][j]=0;
                 }
                 // recurrence relation;
-                // if s1[i] == s2[j] then dp[i][j] += dp[i-1][j-1];
+                // if s1[i] == s2[j] then dp[i][j] += dp[i-1][j-1]+1;
                 for(i=1;i<=n1;i++)
                 {
                         for(j=1;j<=n2;j++)
