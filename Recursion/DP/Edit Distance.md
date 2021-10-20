@@ -1,4 +1,16 @@
-// Problem link : https://leetcode.com/problems/edit-distance/
+[Problem](https://leetcode.com/problems/edit-distance/) : Given two strings ```word1``` and ```word2```, return the minimum number of operations required to convert word1 to word2.
+You have the following three operations permitted on a word:
+<ul>
+        <li>Insert a character</li>
+        <li>Delete a character</li>
+        <li>Replace a character</li>
+</ul>
+
+
+<details>
+<summary>Code</summary>
+
+```
 class Solution 
 {
         public:
@@ -39,3 +51,5 @@ class Solution
                 return dp[n1][n2];
         }
 };
+```
+</details>
