@@ -1,3 +1,9 @@
+[Problem](https://leetcode.com/problems/longest-palindromic-substring/) : Given a string s, return the longest palindromic substring in s.
+
+<details>
+<summary>Code</summary>
+
+```
 class Solution 
 {
         public:
@@ -43,3 +49,11 @@ class Solution
                 return ans;
         }
 };
+```
+</details>
+
+<details>
+<summary>Bonus</summary>
+        
+[Problem1](https://codeforces.com/problemset/problem/1519/D)
+</details>
