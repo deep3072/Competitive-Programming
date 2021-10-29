@@ -1,5 +1,9 @@
-// Problem link : https://leetcode.com/problems/longest-common-subsequence/
+[Problem](https://leetcode.com/problems/longest-common-subsequence/) : Given two strings text1 and text2, return the length of their longest common subsequence. If there is no common subsequence, return 0.
 
+<details>
+<summary>Code</summary>
+
+```
 class Solution 
 {
         public:
@@ -34,3 +38,5 @@ class Solution
                 return dp[n1][n2];
         }
 };
+```
+</details>
