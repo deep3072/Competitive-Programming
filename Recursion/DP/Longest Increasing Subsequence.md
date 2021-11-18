@@ -1,3 +1,9 @@
+[Problem](https://leetcode.com/problems/longest-increasing-subsequence/) : Given an integer array arr, return the length of the longest strictly increasing subsequence.
+
+<details>
+<summary>Code</summary>
+
+```
 class Solution 
 {
         public:
@@ -7,7 +13,7 @@ class Solution
 
                 int i,n=arr.size(),j;
                 int dp[n];
-                // dp[i] : LIS having ith index as last index;
+                // dp[i] : LIS having ith index as last index in subsequence;
 
 		// Req ans : max(dp[0],dp[1]...,dp[n-1]); 
                 
@@ -15,7 +21,7 @@ class Solution
                 dp[0]=1;
                 
 		// Recurrence Relation
-		//dp[i]=max(dp[0],dp[1]..,dp[j])+1 iff j<i and arr[j] < arr[i] obviously :--
+		//dp[i]=max(dp[0],dp[1]..,dp[j])+1 --> iff j<i and arr[j] < arr[i]
                 int ans=1;
                 for(i=1;i<n;i++)
                 {
@@ -31,3 +37,10 @@ class Solution
                 return ans;
         }
 };
+```
+</details>
+
+<details>
+<summary>Optimal Solution🤔</summary>
+Think about Greedy + Binary Search in O(NlogN)
+</details>
