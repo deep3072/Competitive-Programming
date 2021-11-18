@@ -55,5 +55,5 @@ class Solution
 <details>
 <summary>Bonus</summary>
         
-[Problem1](https://codeforces.com/problemset/problem/1519/D)
+[D. Maximum Sum of Products](https://codeforces.com/problemset/problem/1519/D)
 </details>
