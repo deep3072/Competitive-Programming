@@ -42,5 +42,8 @@ class Solution
 
 <details>
 <summary>Optimal Solution🤔</summary>
-Think about Greedy + Binary Search in O(NlogN)
+	
+- Think about Greedy + Binary Search. 💭
+	
+- [Don't Click](https://github.com/deep3072/Competitive-Programming/blob/master/Greedy%20Algorithms/Longest%20Increasing%20Subsequence.md)
 </details>
