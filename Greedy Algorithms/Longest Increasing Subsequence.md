@@ -1,3 +1,9 @@
+[Problem](https://leetcode.com/problems/longest-increasing-subsequence/) : Given an integer array arr, return the length of the longest strictly increasing subsequence.
+
+<details>
+<summary>Code</summary>
+
+```
 class Solution 
 {
         public:
@@ -39,3 +45,19 @@ class Solution
                 return v1.size();
         }
 };
+```
+</details>
+
+<details>
+<summary>DP ?🤔</summary>
+        
+[Don't Click](https://github.com/deep3072/Competitive-Programming/blob/master/Recursion/DP/Longest%20Increasing%20Subsequence.md)
+</details>
+        
+<details>
+<summary>Bonus</summary>
+        
+[Longest Monotonically Nondecreasing Sequence](https://www.spoj.com/problems/LMIS/)
+</details>
+
+
