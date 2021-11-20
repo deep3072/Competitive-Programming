@@ -57,7 +57,7 @@ class Solution
 <details>
 <summary>Bonus</summary>
         
-[Longest Monotonically Nondecreasing Sequence](https://www.spoj.com/problems/LMIS/)
+- [Longest Monotonically Nondecreasing Sequence](https://www.spoj.com/problems/LMIS/)
 </details>
 
 
