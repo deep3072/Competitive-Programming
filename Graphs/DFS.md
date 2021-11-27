@@ -23,3 +23,38 @@ class Solution
 ```
         
 </details>
+
+class Solution 
+{
+        public:
+        bool hasPathSum(TreeNode* root, int sum) 
+        {
+                //iterative solution DFS
+                if(!root)
+                        return false;
+                stack<TreeNode*> treeStack;
+                stack<int> sumStack;
+                treeStack.push(root);
+                sumStack.push(sum);
+                while(!treeStack.empty())
+                {
+                        auto node = treeStack.top();
+                        treeStack.pop();
+                        auto sumnode = sumStack.top();
+                        sumStack.pop();
+                        if(node->left == NULL && node->right == NULL && node->val==sumnode)
+                                return true;
+                        if(node->left!=NULL)
+                        {
+                                treeStack.push(node->left);
+                                sumStack.push(sumnode - node->val);
+                        }
+                        if(node->right!=NULL)
+                        {
+                                treeStack.push(node->right);
+                                sumStack.push(sumnode - node->val);
+                        }
+                }
+                return false;
+        }
+};
