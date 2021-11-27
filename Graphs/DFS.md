@@ -3,6 +3,9 @@
 <details>
 <summary>Code</summary>
         
+<details>
+<summary>Recursive</summary>
+        
 ```
 class Solution 
 {
@@ -24,12 +27,15 @@ class Solution
         
 </details>
 
+<details>
+<summary>Iterative➿</summary>
+
+```
 class Solution 
 {
         public:
         bool hasPathSum(TreeNode* root, int sum) 
         {
-                //iterative solution DFS
                 if(!root)
                         return false;
                 stack<TreeNode*> treeStack;
@@ -58,3 +64,7 @@ class Solution
                 return false;
         }
 };
+```
+
+</details>
+</details>
