@@ -5,6 +5,6 @@
   
 - [C. Chat Ban](https://codeforces.com/contest/1612/problem/C)
   
-- [441. Arranging Coins](https://leetcode.com/problems/arranging-coins/)
+- [C. Poisoned Dagger](https://codeforces.com/contest/1613/problem/C)
 
 </details>
