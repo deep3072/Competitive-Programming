@@ -51,4 +51,6 @@ class Solution
 <summary>Bonus</summary>
         
 - [D. Love Rescue](https://codeforces.com/contest/939/problem/D)
+        
+- [E. Crazy Robot](https://codeforces.com/contest/1613/problem/E)
 </details>
