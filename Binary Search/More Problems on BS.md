@@ -6,5 +6,7 @@
 - [C. Chat Ban](https://codeforces.com/contest/1612/problem/C)
   
 - [C. Poisoned Dagger](https://codeforces.com/contest/1613/problem/C)
+        
+- [C. Balanced Stone Heaps](https://codeforces.com/problemset/problem/1623/C)
 
 </details>
