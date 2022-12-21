@@ -10,37 +10,33 @@ void merge(ll arr[],ll l,ll mid,ll r)
 {
         // l to mid elements in arr1
         // mid+1 to r elements in arr2
-        ll n1=mid-l+1;
-        ll n2=r-mid,i;
-        ll arr1[n1],arr2[n2];
-        for(i=0;i<n1;i++)
-                arr1[i]=arr[l+i];
-        for(i=0;i<n2;i++)
-                arr2[i]=arr[mid+i+1];
+        ll n1 = mid - l + 1;
+        ll n2 = r - mid;
         
-        i=0;
-        ll j=0,ind=l;
+        ll arr1[n1], arr2[n2];
+        for(int i=0;i<n1;i++)
+                arr1[i] = arr[l+i];
+        
+        for(int i=0;i<n2;i++)
+                arr2[i] = arr[mid+i+1];
+        
+        // arr1 and arr2 are internally sorted, we just merge them to make sorted array
+        ll i = 0;
+        ll j =0, index=l;
         while(i<n1 && j<n2)
         {
-                if(arr1[i]<arr2[j])
-                {
-                        arr[ind++]=arr1[i];
-                        i++;
-                }
-                else{
-                        arr[ind++]=arr2[j];
-                        j++;
-                }
-        }
-        while(i<n1)
-        {
-                arr[ind++]=arr1[i++];
+                if(arr1[i] <= arr2[j])
+                        arr[index++] = arr1[i++];
+                else
+                        arr[index++] = arr2[j++];
         }
         
+        while(i<n1)
+                arr[index++] = arr1[i++];
+        
         while(j<n2)
-        {
-                arr[ind++]=arr2[j++];
-        }
+                arr[index++] = arr2[j++];
+        
 }
 
 void mergeSort(ll arr[],ll l, ll r)

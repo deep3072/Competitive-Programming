@@ -2,32 +2,29 @@
 
 using namespace std;
 
+
 #define FAST ios::sync_with_stdio(false); cin.tie(0); cout.tie(0);
 #define ll long long int
 
-
-ll partition(ll arr[],ll l,ll r)
+void bubbleSort(ll arr[],ll n)
 {
-        ll i=l-1; // i would be the last index having arr[i] < arr[r]
-        for(ll j=l;j<r;j++)
+        for(int i=0;i<n-1;i++)
         {
-                if(arr[j]<arr[r])
+                int flag = 0;
+                // Last i elements are already in place
+                for(int j=0;j<n-i-1;j++)
                 {
-                        i++;
-                        swap(arr[i],arr[j]);
+                    if(arr[j] > arr[j+1])
+                    {
+                        swap(arr[j],arr[j+1]);
+                        flag = 1;
+                    }
                 }
-        }
-        swap(arr[i+1],arr[r]);
-        return i+1;
-}
-
-void Quicksort(ll arr[],ll l,ll r)
-{
-        if(l<r)
-        {
-                int pivot=partition(arr,l,r);
-                Quicksort(arr,l,pivot-1);
-                Quicksort(arr,pivot,r);
+                if(flag == 0)
+                {
+                    // no swaps occured hence array already sorted
+                    break;
+                }    
         }
 }
 
@@ -38,7 +35,8 @@ void solve()
         ll arr[n];
         for(i=0;i<n;i++)
                 cin >> arr[i];
-        Quicksort(arr,0,n-1);
+        
+        bubbleSort(arr,n);
         for(i=0;i<n;i++)
                 cout << arr[i] << " ";
 }
